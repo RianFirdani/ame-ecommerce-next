@@ -6,10 +6,7 @@ import { getProducts } from "@/libs/products/Products";
 
 const CitiesSection = async () => {
   const productsRes = await getProducts();
-  const inventoriesRes = await getAllInventories();
-
-  const products = productsRes.data;
-  const inventories = inventoriesRes.data;
+ const products = productsRes.data;
   return (
     <section id="Cities" className="flex flex-col gap-[30px] mt-[100px]">
       <div className="w-full max-w-[1130px] mx-auto flex items-center justify-between">
@@ -20,7 +17,7 @@ const CitiesSection = async () => {
           Explore All City
         </a>
       </div>
-      <CardCities products={products} inventories={inventories} />
+      <CardCities products={products}  />
     </section>
   );
 };

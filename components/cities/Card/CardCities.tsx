@@ -2,11 +2,11 @@
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
-const CardCities = async ({products,inventories}) => {
+const CardCities = async ({products}) => {
 
   return (
     <>
-      {inventories.flatMap((inv) =>
+     {
         products.map((product) => (
           <Swiper
         spaceBetween={30}
@@ -25,7 +25,7 @@ const CardCities = async ({products,inventories}) => {
                 <p className="text-white">{product.description}</p>
               </div>
               <img
-                src={inv.image}
+                src={'/public/assets/images/icons/coffee.svg'}
                 className="absolute w-full h-full object-cover"
                 alt="thumbnail"
               />
@@ -35,7 +35,7 @@ const CardCities = async ({products,inventories}) => {
       </Swiper>
           
         ))
-      )}
+      }
     </>
   );
 };

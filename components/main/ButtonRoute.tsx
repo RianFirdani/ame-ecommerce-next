@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ButtonRoute = ({Route = '/',icon = "",text = ""}) => {
+const ButtonRoute = ({Route = '/',icon = "/next.svg",text = ""}) => {
   return (
      <a
         href={Route}
