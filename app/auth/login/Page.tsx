@@ -1,3 +1,4 @@
+import LoginForm from '@/components/auth/LoginForm';
 import React from 'react'
 
 const Page = () => {
@@ -14,52 +15,7 @@ const Page = () => {
             Login
           </h1>
 
-          {/* Form */}
-          <div className="space-y-6">
-
-            {/* Email */}
-            <div className="relative">
-              <input
-                id="email"
-                name="email"
-                type="email"
-                className="peer w-full h-12 border-b-2 border-gray-300 dark:border-gray-600 bg-transparent text-gray-900 dark:text-white placeholder-transparent focus:outline-none focus:border-cyan-500"
-                placeholder="Email"
-              />
-              <label
-                htmlFor="email"
-                className="absolute left-0 top-3 text-gray-500 dark:text-gray-300 transition-all
-                peer-placeholder-shown:top-3 peer-placeholder-shown:text-base
-                peer-focus:-top-3 peer-focus:text-sm peer-focus:text-cyan-500"
-              >
-                Email Address
-              </label>
-            </div>
-
-            {/* Password */}
-            <div className="relative">
-              <input
-                id="password"
-                name="password"
-                type="password"
-                className="peer w-full h-12 border-b-2 border-gray-300 dark:border-gray-600 bg-transparent text-gray-900 dark:text-white placeholder-transparent focus:outline-none focus:border-cyan-500"
-                placeholder="Password"
-              />
-              <label
-                htmlFor="password"
-                className="absolute left-0 top-3 text-gray-500 dark:text-gray-300 transition-all
-                peer-placeholder-shown:top-3 peer-placeholder-shown:text-base
-                peer-focus:-top-3 peer-focus:text-sm peer-focus:text-cyan-500"
-              >
-                Password
-              </label>
-            </div>
-
-            {/* Submit */}
-            <button className="w-full py-3 bg-cyan-500 hover:bg-cyan-600 transition text-black font-semibold rounded-md">
-              Submit
-            </button>
-          </div>
+         <LoginForm/>
 
           {/* Divider */}
           <div className="my-6 flex items-center">
@@ -72,11 +28,7 @@ const Page = () => {
 
           {/* Google Button */}
           <button className="w-full flex items-center justify-center gap-3 border border-gray-300 dark:border-gray-600 py-3 rounded-lg bg-white dark:bg-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 transition">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"
-              className="w-6 h-6"
-              alt="Google icon"
-            />
+           
             <span className="font-medium text-gray-800 dark:text-white">
               Continue with Google
             </span>
